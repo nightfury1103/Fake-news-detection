@@ -3,13 +3,8 @@ from datetime import date
 import streamlit as st
 from streamlit.components.v1 import iframe
 import pickle
-import requests
 
-@st.cache(allow_output_mutation=True)
-def load_session():
-    return requests.Session()
 
-sess = load_session()
 st.set_page_config(layout="centered", page_icon="🎓", page_title="NLP Predict")
 st.title("🎓 Fake news prediction")
 
