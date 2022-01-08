@@ -34,25 +34,17 @@ def main():
     submit = form.form_submit_button("Check")
 
     file = 0
-    model = 0
     if str(course) == 'Multi-layer Perceptron':
         # file = open("MLP.pkl",'rb')
-        with open('MLP.pkl', 'rb') as f:
-            model = pickle.load(f)
-    if str(course) == 'Logistic classifier':
-        # file = open("log_classifier.pkl",'rb')
-        with open('log_classifier.pkl', 'rb') as f:
-            model = pickle.load(f)
-    if str(course) == 'K-neighbour':
-        # file = open("Kneighbor_classifier.pkl",'rb')
-        with open('Kneighbor_classifier.pkl', 'rb') as f:
-            model = pickle.load(f)
-    if str(course) == 'Naivebayes':
-        # file = open("naivebayes_classifier.pkl",'rb')
-        with open('naivebayes_classifier.pkl', 'rb') as f:
-            model = pickle.load(f)
+        with open("MLP.pkl", "rb") as f:
+    # if str(course) == 'Logistic classifier':
+    #     file = open("log_classifier.pkl",'rb')
+    # if str(course) == 'K-neighbour':
+    #     file = open("Kneighbor_classifier.pkl",'rb')
+    # if str(course) == 'Naivebayes':
+    #     file = open("naivebayes_classifier.pkl",'rb')
 
-    # model = pickle.load(file)
+            model = pickle.load(f)
 
     if submit:
         with st.spinner("Predicting..."):
