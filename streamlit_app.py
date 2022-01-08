@@ -42,7 +42,7 @@ if str(course) == 'K-neighbour':
     file = open("Kneighbor_classifier.pkl",'rb')
 if str(course) == 'Naivebayes':
     file = open("naivebayes_classifier.pkl",'rb')
-
+left.markdown(str(file))
 model = pickle.load(file)
 
 if submit:
