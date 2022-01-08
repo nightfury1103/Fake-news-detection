@@ -1,0 +1,4 @@
+nltk==3.6.5
+requests==2.26.0
+streamlit==1.2.0
+scikit-learn
