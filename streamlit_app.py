@@ -33,7 +33,7 @@ course = form.selectbox(
 # grade = form.slider("Grade", 1, 100, 60)
 submit = form.form_submit_button("Check")
 
-file = 0
+file = open("MLP.pkl",'rb')
 if str(course) == 'Multi-layer Perceptron':
     file = open("MLP.pkl",'rb')
 if str(course) == 'Logistic classifier':
