@@ -3,7 +3,7 @@ from datetime import date
 import streamlit as st
 from streamlit.components.v1 import iframe
 import pickle
-from preprocessing import text_preprocessing
+# from preprocessing import text_preprocessing
 
 st.set_page_config(layout="centered", page_icon="🎓", page_title="NLP Predict")
 st.title("🎓 Fake news prediction")
