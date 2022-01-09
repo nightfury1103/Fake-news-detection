@@ -61,7 +61,6 @@ if submit:
             # text_vectorized = tfidf_vectorizer.transform([cleaned_news])
 
             cleaned_news = text_preprocessing(student)
-            left.markdown(cleaned_news)
             pred = model.predict([cleaned_news])[0]
 
             if pred == 1:
