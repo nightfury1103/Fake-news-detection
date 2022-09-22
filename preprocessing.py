@@ -3,7 +3,7 @@ import re
 
 # Lower text func
 def lower_text(text):
-    return ' '.join(text.lower() for x in text.split())
+    return ' '.join(text.lower() for _ in text.split())
 
 
 # Remove stopword func
@@ -11,7 +11,7 @@ def get_stopwords_list(stop_file_path):
     """load stop words """
     with open(stop_file_path, 'r', encoding="utf-8") as f:
         stopwords = f.readlines()
-        stop_set = set(m.strip() for m in stopwords)
+        stop_set = {m.strip() for m in stopwords}
         return list(frozenset(stop_set))
 
 
